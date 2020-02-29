@@ -15,7 +15,7 @@ For logging code output. This is not for server logging.
 
 ## Why?
 
-Markdown is a great form factor for writing. An editor + markdown is lightweight and often times a better experience than word processors.]\Writing in markdown is a useful workflow for a daily development logs etc.
+Markdown is a great form factor for writing. An editor + markdown is lightweight and often times a better experience than word processors. Writing in markdown is a useful workflow for a daily development logs or anything else.
 
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
@@ -34,7 +34,7 @@ $ npm install -g lggn
 $ lggn COMMAND
 running command...
 $ lggn (-v|--version|version)
-lggn/0.0.0 darwin-x64 node-v13.9.0
+lggn/0.1.0 darwin-x64 node-v13.9.0
 $ lggn --help [COMMAND]
 USAGE
   $ lggn COMMAND
@@ -64,7 +64,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/derFBeste/lggn/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/derFBeste/lggn/blob/v0.1.0/src/commands/hello.ts)_
 
 ## `lggn help [COMMAND]`
 

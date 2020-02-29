@@ -1,7 +1,7 @@
 {
   "name": "lggn",
   "description": "markdown log generation",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Fred Besteman",
   "bin": {
     "lggn": "./bin/run"
@@ -40,7 +40,9 @@
   ],
   "homepage": "https://github.com/derFBeste/lggn",
   "keywords": [
-    "oclif"
+    "oclif",
+    "typescript",
+    "markdown"
   ],
   "license": "MIT",
   "main": "lib/index.js",
