@@ -3,7 +3,7 @@ lggn
 
 markdown log generation
 
-## **Don't use this until a 1.0 release**
+## **WIP: Don't use this until a 1.0 release**
 
 ## What it is
 
