@@ -1382,6 +1382,11 @@ indent-string@^4.0.0:
   resolved "https://registry.yarnpkg.com/indent-string/-/indent-string-4.0.0.tgz#624f8f4497d619b2d9768531d58f4122854d7251"
   integrity sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==
 
+indento@^1.1.7:
+  version "1.1.12"
+  resolved "https://registry.yarnpkg.com/indento/-/indento-1.1.12.tgz#e95942e88e528655df33f129b6826019a1a221fd"
+  integrity sha512-hWlFlRL6dd06MU5SsOZZ6kzO7t/7ZjcxWh1Yf/MjGtyKQMC8SPS5GbZ2XqMBGaGn+HM2QQawYxSLtS7Zv0w0BQ==
+
 inflight@^1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
@@ -1589,6 +1594,13 @@ json-stable-stringify-without-jsonify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
   integrity sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=
+
+json2md@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/json2md/-/json2md-1.7.0.tgz#aaf4bad77ec8c0e623169a288add12b6493e180e"
+  integrity sha512-g/lg6H3sEeyqCTqNLn8DTsqAa2wwqUI0Y7MnZ8d6wJLMJLgsMp5mBO9hPIPPuFjv/C1vYBoKAZG8TdTfcIGZCA==
+  dependencies:
+    indento "^1.1.7"
 
 jsonfile@^4.0.0:
   version "4.0.0"

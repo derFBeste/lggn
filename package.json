@@ -13,6 +13,7 @@
     "@oclif/plugin-help": "^2",
     "@types/inquirer": "^6.5.0",
     "inquirer": "^7.1.0",
+    "json2md": "^1.7.0",
     "tslib": "^1"
   },
   "devDependencies": {

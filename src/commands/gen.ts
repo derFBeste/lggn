@@ -3,6 +3,9 @@ import {createFile} from '../gen'
 import cli from 'cli-ux'
 import * as inquirer from 'inquirer'
 
+// TODO: make all options available to set as cli args
+// TODO: need gen command at all? or can I make it the default command?
+
 export default class FileGen extends Command {
   static description = 'generate'
 
@@ -14,10 +17,15 @@ export default class FileGen extends Command {
   async run() {
     const responses: any = await inquirer.prompt([
       {
-        name: 'dirName',
-        message: 'directory name:',
+        name: 'projectName',
+        message: 'project name:',
         type: 'input',
       },
+      // {
+      //   name: 'startDt',
+      //   message: 'What date should the files start at?',
+      //   type: 'input',
+      // },
       {
         name: 'fileFormat',
         message: 'choose file format:',
@@ -29,18 +37,30 @@ export default class FileGen extends Command {
         ],
       },
       {
+        name: 'headingFormat',
+        message: 'choose heading format:',
+        type: 'list',
+        choices: [
+          {name: 'day', value: 'day'},
+          {name: 'date', value: 'date'},
+          {name: 'day number', value: 'day number'},
+          {name: 'star date', value: 'star date'},
+        ],
+      },
+      {
         name: 'confirmGen',
         message: 'generate files',
         type: 'confirm',
       },
     ])
 
-    if (responses.confirmGen) {
+    const {confirmGen, fileFormat, headingFormat, projectName} = responses
+
+    if (confirmGen) {
+      createFile({prjctNm: projectName, fileFrmt: fileFormat, headingFrmt: headingFormat})
       this.log(responses)
     } else {
-      this.log('cancelling')
+      this.log('cancelled')
     }
   }
 }
-
-// TODO: can I use types to config?
